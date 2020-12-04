@@ -1,26 +1,15 @@
 ---
-title: "Manuscript Title"
+title: "Food Flow Project"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - Food flow
+  - Random Forest
+  - Neural Network
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: junrenwang
+    name: Junren Wang
+    initials: JW
+
+    email: junrenw2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
