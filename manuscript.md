@@ -1,7 +1,6 @@
 ---
 author-meta:
-- John Doe
-- Jane Roe
+- Junren Wang
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-04'
@@ -15,13 +14,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Manuscript Title" />
+  <meta name="dc.title" content="Food Flow Project" />
 
-  <meta name="citation_title" content="Manuscript Title" />
+  <meta name="citation_title" content="Food Flow Project" />
 
-  <meta property="og:title" content="Manuscript Title" />
+  <meta property="og:title" content="Food Flow Project" />
 
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta property="twitter:title" content="Food Flow Project" />
 
   <meta name="dc.date" content="2020-12-04" />
 
@@ -39,21 +38,9 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
-  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author" content="Junren Wang" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-
-  <meta name="twitter:creator" content="@johndoe" />
-
-  <meta name="citation_author" content="Jane Roe" />
-
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
 
   <link rel="canonical" href="https://junrenwang.github.io/foodflowproject/" />
 
@@ -67,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -85,15 +72,15 @@ header-includes: '<!--
 
   <!-- end Manubot generated metadata -->'
 keywords:
-- markdown
-- publishing
-- manubot
+- Food flow
+- Random Forest
+- Neural Network
 lang: en-US
 manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Manuscript Title
+title: Food Flow Project
 ...
 
 
@@ -103,9 +90,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/))
 was automatically generated
-from [junrenwang/foodflowproject@cf9c2c7](https://github.com/junrenwang/foodflowproject/tree/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859)
+from [junrenwang/foodflowproject@f2404ba](https://github.com/junrenwang/foodflowproject/tree/f2404ba22997a381498b3739c9c69c20465b3f69)
 on December 4, 2020.
 </em></small>
 
@@ -113,25 +100,11 @@ on December 4, 2020.
 
 
 
-+ **John Doe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **Junren Wang**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [junrenwang](https://github.com/junrenwang)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
-  </small>
-
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
-  <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
 
 

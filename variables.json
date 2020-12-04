@@ -1,18 +1,17 @@
 {
   "pandoc": {
-    "title": "Manuscript Title",
+    "title": "Food Flow Project",
     "keywords": [
-      "markdown",
-      "publishing",
-      "manubot"
+      "Food flow",
+      "Random Forest",
+      "Neural Network"
     ],
     "lang": "en-US",
     "date-meta": "2020-12-04",
     "author-meta": [
-      "John Doe",
-      "Jane Roe"
+      "Junren Wang"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2020-12-04\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-04\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta property=\"og:url\" content=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta property=\"twitter:url\" content=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta name=\"citation_pdf_url\" content=\"https://junrenwang.github.io/foodflowproject/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://junrenwang.github.io/foodflowproject/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Food Flow Project\" />\n<meta name=\"citation_title\" content=\"Food Flow Project\" />\n<meta property=\"og:title\" content=\"Food Flow Project\" />\n<meta property=\"twitter:title\" content=\"Food Flow Project\" />\n<meta name=\"dc.date\" content=\"2020-12-04\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-04\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Junren Wang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<link rel=\"canonical\" href=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta property=\"og:url\" content=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta property=\"twitter:url\" content=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://junrenwang.github.io/foodflowproject/\" />\n<meta name=\"citation_pdf_url\" content=\"https://junrenwang.github.io/foodflowproject/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://junrenwang.github.io/foodflowproject/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -25,46 +24,22 @@
     "date": "December 4, 2020",
     "authors": [
       {
-        "github": "johndoe",
-        "name": "John Doe",
-        "initials": "JD",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "johndoe",
-        "email": "john.doe@something.com",
+        "github": "junrenwang",
+        "name": "Junren Wang",
+        "initials": "JW",
+        "email": "junrenw2@illinois.edu",
         "affiliations": [
-          "Department of Something, University of Whatever"
-        ],
-        "funders": [
-          "Grant XXXXXXXX"
+          "Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign"
         ],
         "affiliation_numbers": [
           1
-        ]
-      },
-      {
-        "github": "janeroe",
-        "name": "Jane Roe",
-        "initials": "JR",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "email": "jane.roe@whatever.edu",
-        "affiliations": [
-          "Department of Something, University of Whatever",
-          "Department of Whatever, University of Something"
-        ],
-        "affiliation_numbers": [
-          1,
-          2
         ]
       }
     ],
     "affiliations": [
       {
-        "affiliation": "Department of Something, University of Whatever",
+        "affiliation": "Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign",
         "affiliation_number": 1
-      },
-      {
-        "affiliation": "Department of Whatever, University of Something",
-        "affiliation_number": 2
       }
     ],
     "ci_source": {
@@ -72,15 +47,15 @@
       "repo_slug": "junrenwang/foodflowproject",
       "repo_owner": "junrenwang",
       "repo_name": "foodflowproject",
-      "commit": "cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859",
-      "triggering_commit": "cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859",
-      "build_url": "https://github.com/junrenwang/foodflowproject/commit/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/checks",
+      "commit": "f2404ba22997a381498b3739c9c69c20465b3f69",
+      "triggering_commit": "f2404ba22997a381498b3739c9c69c20465b3f69",
+      "build_url": "https://github.com/junrenwang/foodflowproject/commit/f2404ba22997a381498b3739c9c69c20465b3f69/checks",
       "job_url": "https://github.com/junrenwang/foodflowproject/runs/run3"
     },
     "html_url": "https://junrenwang.github.io/foodflowproject/",
     "pdf_url": "https://junrenwang.github.io/foodflowproject/manuscript.pdf",
-    "html_url_versioned": "https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/",
-    "pdf_url_versioned": "https://junrenwang.github.io/foodflowproject/v/cf9c2c78fe9e1b1cc8c52ce72c9f3fa1e38d9859/manuscript.pdf",
+    "html_url_versioned": "https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/",
+    "pdf_url_versioned": "https://junrenwang.github.io/foodflowproject/v/f2404ba22997a381498b3739c9c69c20465b3f69/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
     "manuscript_stats": {
