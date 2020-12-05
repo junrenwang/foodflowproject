@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/6b940231d583e2d9dcb7360351e374ebb06c164e/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6b940231d583e2d9dcb7360351e374ebb06c164e/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6b940231d583e2d9dcb7360351e374ebb06c164e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/6b940231d583e2d9dcb7360351e374ebb06c164e/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/))
 was automatically generated
-from [junrenwang/foodflowproject@6b94023](https://github.com/junrenwang/foodflowproject/tree/6b940231d583e2d9dcb7360351e374ebb06c164e)
+from [junrenwang/foodflowproject@4eeec18](https://github.com/junrenwang/foodflowproject/tree/4eeec18dcea87fe065d61c65aac30b7647d811ba)
 on December 5, 2020.
 </em></small>
 
@@ -118,9 +118,12 @@ on December 5, 2020.
 
 
 ## Method
+
 To estimate the bilateral food flow between state pairs, we employ Random forest and Neural Network model. 
 A gravity model is used as baseline model. 
+
 ### Random Forest
+
 First of all, the FAF data needed to be expanded, because it does not include the case of no transaction, we will add the case of zero.
 To meet Kaggle's memory limitations, whether the products are imported, exported or produced domestically is ignored in RF model. 
 We group the bilateral flow data by origination state, destination state, commodity type, transportation mode and year.
@@ -149,18 +152,20 @@ Random Forests are good at dealing with outliers and different scale features bu
 In order to prevent close to 0 weights in base model due to different scales of features, we standardize the features to center the feature columns at mean 0 with standard deviation 1.
 After preparing the data for Random Forest model, we decide the hyperparameters for the RF model by applying the brute force grid search.
 
-###Baseline Model
+### Baseline Model
+
 To validate our model, we also try the gravity model.
 The linear model like Ridge model is not suitable for the bilateral food flow estimation.
 Gravity model is one of the most robust empirical models to illustrate the drivers in international trade:
 bilateral trade between two countries is proportional to size, mostly measured in GDP and inversely proportional to “distance" between them, which commonly fitted through Poisson Pseudo Maximum Likelihood (PPML) method to deal with the zeros.
 We use the python GLE library to do Poisson Psedo Maximum Likelihood regression.
 The gravity model calculate the  $origst\times year$ and $destst\times year$ fixed effect and the impact of variables used in RF model.
-\subsection{Data}
-\subsubsection{Bilateral food flow}
+
+### Data
+#### Bilateral food flow
 The FAF dataset includes every 5 years data from 1997 to 2017. 
 
-\subsubsection{Other features}
+#### Other features
 income data
 
 gdp data
