@@ -44,9 +44,9 @@
   <meta name="citation_fulltext_html_url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_pdf_url" content="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/" />
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/">permalink</a>)
+(<a href="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/junrenwang/foodflowproject/tree/4eeec18dcea87fe065d61c65aac30b7647d811ba">junrenwang/foodflowproject@4eeec18</a>
+from <a href="https://github.com/junrenwang/foodflowproject/tree/310fcdd51aa616d5d374c69afefa7840a78b29b2">junrenwang/foodflowproject@310fcdd</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -121,6 +121,13 @@ The gravity model calculate the <span class="math inline">\(origst\times year\)<
 <p>gdp data</p>
 <p>production data</p>
 <p>distance</p>
+<h2 id="result">Result</h2>
+<h3 id="random-forest-1">Random Forest</h3>
+<p>Through GridSearching, the hyperparameters we select is max depth (20) and number of estimators (50).
+Figure~shows the estimation results.
+The validation <span class="math inline">\(r^2\)</span> is 0.86. RF model shows the better performance for the large flow.</p>
+<h3 id="baseline">Baseline</h3>
+<p>Using the same data as RF model mentioned above, the validation accuracy <span class="math inline">\(r^2\)</span> of Ridge model is 0.049 because there are so many zeros in the dataset.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">

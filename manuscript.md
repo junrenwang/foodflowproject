@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/4eeec18dcea87fe065d61c65aac30b7647d811ba/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/))
 was automatically generated
-from [junrenwang/foodflowproject@4eeec18](https://github.com/junrenwang/foodflowproject/tree/4eeec18dcea87fe065d61c65aac30b7647d811ba)
+from [junrenwang/foodflowproject@310fcdd](https://github.com/junrenwang/foodflowproject/tree/310fcdd51aa616d5d374c69afefa7840a78b29b2)
 on December 5, 2020.
 </em></small>
 
@@ -174,6 +174,17 @@ production data
 
 distance
 
+
+
+## Result
+
+### Random Forest
+Through GridSearching, the hyperparameters we select is max depth (20) and number of estimators (50).
+Figure~\ref shows the estimation results. 
+The validation $r^2$ is 0.86. RF model shows the better performance for the large flow.
+
+### Baseline
+Using the same data as RF model mentioned above, the validation accuracy $r^2$ of Ridge model is 0.049 because there are so many zeros in the dataset. 
 
 
 ## References {.page_break_before}

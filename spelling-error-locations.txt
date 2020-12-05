@@ -19,3 +19,6 @@ content/03.Method.md:43:destst
 content/03.Method.md:43:origst
 content/03.Method.md:47:dataset
 content/03.Method.md:47:FAF
+content/04.Result.md:4:GridSearching
+content/04.Result.md:4:hyperparameters
+content/04.Result.md:9:dataset
