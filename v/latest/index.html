@@ -44,9 +44,9 @@
   <meta name="citation_fulltext_html_url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_pdf_url" content="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/">permalink</a>)
+(<a href="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/junrenwang/foodflowproject/tree/310fcdd51aa616d5d374c69afefa7840a78b29b2">junrenwang/foodflowproject@310fcdd</a>
+from <a href="https://github.com/junrenwang/foodflowproject/tree/d9e6f717549a990869eeeae094ca6f9dda4d28dc">junrenwang/foodflowproject@d9e6f71</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -128,6 +128,18 @@ Figure~shows the estimation results.
 The validation <span class="math inline">\(r^2\)</span> is 0.86. RF model shows the better performance for the large flow.</p>
 <h3 id="baseline">Baseline</h3>
 <p>Using the same data as RF model mentioned above, the validation accuracy <span class="math inline">\(r^2\)</span> of Ridge model is 0.049 because there are so many zeros in the dataset.</p>
+<h2 id="discussion">Discussion</h2>
+<h3 id="comparing-the-models">Comparing the models</h3>
+<p>We compare the different model results: (1) NN and RF models both shows better prediction performance for larger trade flow.
+Random Forest shows better results than Neural Network and gravity model.</p>
+<p>###Limitations</p>
+<p>There are several limitations in this study.
+Firstly, the distance used in this study is haversine distance.
+In other words, we don’t consider the transportation route.
+The random forest might underfit, we try several hyperparameters under the limitation of long time computing time for Random Forest.
+We don’t consider the commodities trade mode(Domestic, imports or exports) in Random Forest model.
+At the same time, different years also have a great impact on transactions, which may be due to the impact of inflation.
+We should add GDP deflator to eliminate this impact.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
