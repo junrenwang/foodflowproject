@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/310fcdd51aa616d5d374c69afefa7840a78b29b2/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/))
 was automatically generated
-from [junrenwang/foodflowproject@310fcdd](https://github.com/junrenwang/foodflowproject/tree/310fcdd51aa616d5d374c69afefa7840a78b29b2)
+from [junrenwang/foodflowproject@d9e6f71](https://github.com/junrenwang/foodflowproject/tree/d9e6f717549a990869eeeae094ca6f9dda4d28dc)
 on December 5, 2020.
 </em></small>
 
@@ -185,6 +185,24 @@ The validation $r^2$ is 0.86. RF model shows the better performance for the larg
 
 ### Baseline
 Using the same data as RF model mentioned above, the validation accuracy $r^2$ of Ridge model is 0.049 because there are so many zeros in the dataset. 
+
+
+## Discussion
+### Comparing the models
+
+We compare the different model results: (1) NN and RF models both shows better prediction performance for larger trade flow.
+Random Forest shows better results than Neural Network and gravity model.
+
+###Limitations
+
+There are several limitations in this study. 
+Firstly, the distance used in this study is haversine distance. 
+In other words, we don't consider the transportation route. 
+The random forest might underfit,  we try several hyperparameters  under the limitation of long time computing time for Random Forest. 
+We don’t consider the commodities trade mode(Domestic, imports or exports) in Random Forest model.
+At the same time, different years also have a great impact on transactions, which may be due to the impact of inflation. 
+We should add GDP deflator to eliminate this impact.
+
 
 
 ## References {.page_break_before}

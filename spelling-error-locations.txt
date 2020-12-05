@@ -22,3 +22,8 @@ content/03.Method.md:47:FAF
 content/04.Result.md:4:GridSearching
 content/04.Result.md:4:hyperparameters
 content/04.Result.md:9:dataset
+content/05.Discussions.md:4:NN
+content/05.Discussions.md:10:haversine
+content/05.Discussions.md:12:hyperparameters
+content/05.Discussions.md:12:underfit
+content/05.Discussions.md:15:deflator
