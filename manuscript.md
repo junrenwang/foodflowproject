@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/fe2f7a5228c2f583bc91bd630e0548b05d8773f6/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/fe2f7a5228c2f583bc91bd630e0548b05d8773f6/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/fe2f7a5228c2f583bc91bd630e0548b05d8773f6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/fe2f7a5228c2f583bc91bd630e0548b05d8773f6/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/))
 was automatically generated
-from [junrenwang/foodflowproject@fe2f7a5](https://github.com/junrenwang/foodflowproject/tree/fe2f7a5228c2f583bc91bd630e0548b05d8773f6)
+from [junrenwang/foodflowproject@2c4764d](https://github.com/junrenwang/foodflowproject/tree/2c4764d06fd0111dd20af3267e205481937134fe)
 on December 6, 2020.
 </em></small>
 
@@ -314,6 +314,6 @@ Meanwhile, we cannot predict zero value weight flow with Neural Network model.
 
 [@Batarseh2019]https://arxiv.org/abs/1910.03112
 
-[@Konar2018]https://doi.org/10.1371/journal.pone.0199498
+[@Konar2018]:doi:10.1371/journal.pone.0199498
 
-[@Smith2017]https://doi.org/10.1073/pnas.1703793114
+[@Smith2017]:doi:10.1073/pnas.1703793114
