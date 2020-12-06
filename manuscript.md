@@ -15,6 +15,14 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
+  <meta name="dc.title" content="Food Flow Project" />
+
+  <meta name="citation_title" content="Food Flow Project" />
+
+  <meta property="og:title" content="Food Flow Project" />
+
+  <meta property="twitter:title" content="Food Flow Project" />
+
   <meta name="dc.date" content="2020-12-06" />
 
   <meta name="citation_publication_date" content="2020-12-06" />
@@ -51,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/283b6bb3d1500bad0abeec2595f96b1dd40f8c8c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/283b6bb3d1500bad0abeec2595f96b1dd40f8c8c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/283b6bb3d1500bad0abeec2595f96b1dd40f8c8c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -77,6 +85,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
+title: Food Flow Project
 ...
 
 
@@ -86,9 +95,9 @@ manubot-requests-cache-path: ci/cache/requests-cache
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/283b6bb3d1500bad0abeec2595f96b1dd40f8c8c/))
 was automatically generated
-from [junrenwang/foodflowproject@e816eeb](https://github.com/junrenwang/foodflowproject/tree/e816eebddd524921be071dbecb763c6f4c7bca42)
+from [junrenwang/foodflowproject@283b6bb](https://github.com/junrenwang/foodflowproject/tree/283b6bb3d1500bad0abeec2595f96b1dd40f8c8c)
 on December 6, 2020.
 </em></small>
 
@@ -245,7 +254,7 @@ The gravity model calculate the  $origst\times year$ and $destst\times year$ fix
 
 As we saw in the last section, the selected value for the number of layers and neurons is 2, and 30 and 12 respectively. These specific values were selected by trying out multiple different layers and neurons combination to find the most efficient structure. The learning rate was kept at 0.001 with a batch size of 100. We find out that the $R^2$ score for the model came out to be 0.43. The figure below shows the scatter plot of the real test values vs the prediction.  
 
-![Neuron Network Result.](images/nn_figure.png){#fig:image5}
+![Neuron Network Result.](images/nn_figure.PNG){#fig:image5}
 
 ### Random Forest
 Through GridSearching, the hyperparameters we selected was 20 for max depth of tree and 50 for number of independent tree.
