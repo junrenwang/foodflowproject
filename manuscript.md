@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/))
 was automatically generated
-from [junrenwang/foodflowproject@8d9afd0](https://github.com/junrenwang/foodflowproject/tree/8d9afd0923ce41ce3341ce4b30c4b6f221140d28)
+from [junrenwang/foodflowproject@7e8884a](https://github.com/junrenwang/foodflowproject/tree/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a)
 on December 6, 2020.
 </em></small>
 
@@ -128,7 +128,7 @@ United States has been a hub of bilateral trade, both internationally and domest
 
 ## Introduction
 
-We reviewed the related articles on bidirectional flow modeling based on machine learning [@Munisamy2020]. Followings are two most important articles to guide our work.
+We reviewed the related articles on bidirectional flow modeling based on machine learning [@Munisamy2020, @Lin2019, @Batarseh2020, @Konar2018, @Smith2017]. Followings are two of the most important articles to guide our work.
 The article Machine learning in gravity models: An application to agricultural trade written by Munisamy Gopinath et al. employed supervised and unsupervised machine learning (ML) method to decipher patterns of international agricultural trade. Gravity model is one of the most robust empirical models to illustrate the drivers in international trade:  bilateral trade between two countries is proportional to size, mostly measured in GDP and inversely proportional to “distance" between them, which commonly fitted through Poisson Pseudo Maximum Likelihood (PPML) method. Munisamy et al. leveraged the decision trees (LightGBM, XGboost), random forests and extra tree regression supervised ML algorithm to predict the bilateral trade. The data used in this project is international bilateral trade information for seven most traded food commodities from 1962 to 2016. The gain and loss was measured by adjusted R-square. The values of maximum depth of the tree, learning rate, number of leaves and feature fraction were tuned to achieve a better prediction. ML methods show more accurate prediction results than gravity model with the adjusted R-square ranged between 45 and 83%. Specifically, LightGBM had the best performance for sugar; Random Forest provided the best fit for corn; and the extra tree regressor yielded highest R-sqaure for beef and milk powder. The size of the two countries has the largest influence to the trade, the distance follows, which is consistent to the gravity model assumptions.  Munisamy et al. also employed multilayer perceptron (MLP), one paradigm of unsupervised ML method for the same datasets. The loss was measured by stochastic gradient descent (SGD) method. Unsupervised ML techniques might be a better method for longer-term trade projections than supervised ML.
 
 Munisamy et al. clearly define the quantitative ML algorithm that we can follow to predict the trade and variables we can also consider for national flows. Comparison between the ML algorithm and PPML method shows that ML is a promising method for the topic we interested in. Also, Munisamy’s work indicates a potential problem we might encounter: the zero values prevalent in the trade data might impair the ML model and deviate it to a wrong direction. We suppose that using the qualititive ML method like discriminant analysis and K-Nearest Neighbors to predict the existance of trade and build the quanlititive ML model on the highly potential existing link might produce a better prediction. Also, because Munisamy work focus on the international trade and our targeted scope is the US, we need to find the alternative predictors for tariff, same language and participated international trade organizations.
@@ -163,6 +163,7 @@ Income and GDP: We obtained economic data, i.e. income and GDP data from Bureau 
 #### EDA
 The EDA is divided into two sections. First is Data Cleaning where we go through various key datasets and tidy them up so that they all can work together. In the second section, we will be looking at their distributions and their possible correlation between each other.
 To begin with, we load the data for food flow. The data has coded features which has relevant meaning. They are described below.
+
 fr: Foreign. Trade across borders. We won't be considering this data for our analysis as we are focussed on food flows among US states.
 
 orig: Origin
@@ -289,7 +290,7 @@ As we specified the commodity type and transportation mode, there is no group va
 ![Gravity model for specific commodity and transportation mode.](images/gravity model result.png){#fig:image4}
 
 
-## Discussion
+## Discussion and Conclusion
 
 ### Comparing the models
 
