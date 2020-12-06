@@ -1,12 +1,15 @@
+animaltotal
 Champaign
 datasat
 dataset
 datasets
 deflator
 destst
+dms
 FAF
 GLE
 GridSearching
+harversine
 haversine
 histgram
 hyperparameters

@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/))
 was automatically generated
-from [junrenwang/foodflowproject@f55f97a](https://github.com/junrenwang/foodflowproject/tree/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8)
+from [junrenwang/foodflowproject@48d5eaf](https://github.com/junrenwang/foodflowproject/tree/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665)
 on December 6, 2020.
 </em></small>
 
@@ -182,7 +182,7 @@ distance
 ## Result
 
 ### Random Forest
-Through GridSearching, the hyperparameters we selected is 20 for max depth of tree and 50 for number of independent tree.
+Through GridSearching, the hyperparameters we selected was 20 for max depth of tree and 50 for number of independent tree.
 Figure @fig:image2 shows the estimation results. 
 The validation $r^2$ is 0.86. RF model shows the better performance for the large flow.
 
@@ -193,8 +193,12 @@ Figure @fig:image3 shows the importance of features on this bilateral food flow 
 The red bars are the importance of the forest with inter-trees variability.  
 As expected, commodity type, gdp of importors and gdp of exporters are informative. 
 Surprisingly, distance and year shows less impact on the regressiom results. 
+The performance of the distance variable is inconsistent with the law of the gravity model, and we consider that this may be due to the harversine distance we use.
 
 ![Random Forest Feature Importance.](images/features importance.png){#fig:image3}
+#####features0:21['value','income_dms_origst', 'income_dms_destst', 'animaltotal_dms_origst', 'animaltotal_dms_destst', 'barley_dms_origst', 'barley_dms_destst', 'corn_dms_origst', 'corn_dms_destst', 'crop_total_dms_origst', 'crop_total_dms_destst', 'honey_dms_origst', 'honey_dms_destst', 'milk_dms_origst', 'milk_dms_destst', 'oats_dms_origst', 'oats_dms_destst', 'wheat_dms_origst', 'wheat_dms_destst', 'gdp_dms_origst', 'gdp_dms_destst', 'distance’]
+22:72  :dms_origst
+73:123: dms_destst
 
 ### Baseline
 Using the same data as RF model mentioned above, the validation accuracy $r^2$ of Ridge model is 0.049 because there are so many zeros in the dataset. 
