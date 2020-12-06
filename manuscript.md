@@ -51,11 +51,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -86,9 +86,9 @@ manubot-requests-cache-path: ci/cache/requests-cache
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/e816eebddd524921be071dbecb763c6f4c7bca42/))
 was automatically generated
-from [junrenwang/foodflowproject@b8e5a0f](https://github.com/junrenwang/foodflowproject/tree/b8e5a0fd9a12eb946768dd7178b89325112e4359)
+from [junrenwang/foodflowproject@e816eeb](https://github.com/junrenwang/foodflowproject/tree/e816eebddd524921be071dbecb763c6f4c7bca42)
 on December 6, 2020.
 </em></small>
 
@@ -240,6 +240,12 @@ The gravity model calculate the  $origst\times year$ and $destst\times year$ fix
 
 
 ## Result
+
+### Neural Network
+
+As we saw in the last section, the selected value for the number of layers and neurons is 2, and 30 and 12 respectively. These specific values were selected by trying out multiple different layers and neurons combination to find the most efficient structure. The learning rate was kept at 0.001 with a batch size of 100. We find out that the $R^2$ score for the model came out to be 0.43. The figure below shows the scatter plot of the real test values vs the prediction.  
+
+![Neuron Network Result.](images/nn_figure.png){#fig:image5}
 
 ### Random Forest
 Through GridSearching, the hyperparameters we selected was 20 for max depth of tree and 50 for number of independent tree.
