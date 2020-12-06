@@ -3,7 +3,7 @@ author-meta:
 - Junren Wang
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-05'
+date-meta: '2020-12-06'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -22,9 +22,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Food Flow Project" />
 
-  <meta name="dc.date" content="2020-12-05" />
+  <meta name="dc.date" content="2020-12-06" />
 
-  <meta name="citation_publication_date" content="2020-12-05" />
+  <meta name="citation_publication_date" content="2020-12-06" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/13e31578cfcd592bcee921749c9f9fb476b4e60d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/13e31578cfcd592bcee921749c9f9fb476b4e60d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/13e31578cfcd592bcee921749c9f9fb476b4e60d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,10 +90,10 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/d9e6f717549a990869eeeae094ca6f9dda4d28dc/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/13e31578cfcd592bcee921749c9f9fb476b4e60d/))
 was automatically generated
-from [junrenwang/foodflowproject@d9e6f71](https://github.com/junrenwang/foodflowproject/tree/d9e6f717549a990869eeeae094ca6f9dda4d28dc)
-on December 5, 2020.
+from [junrenwang/foodflowproject@13e3157](https://github.com/junrenwang/foodflowproject/tree/13e31578cfcd592bcee921749c9f9fb476b4e60d)
+on December 6, 2020.
 </em></small>
 
 ## Authors
