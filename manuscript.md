@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/))
 was automatically generated
-from [junrenwang/foodflowproject@7bfc7a2](https://github.com/junrenwang/foodflowproject/tree/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397)
+from [junrenwang/foodflowproject@1955a80](https://github.com/junrenwang/foodflowproject/tree/1955a8015ed72b8801b3713dd92b5c612dd2a47d)
 on December 6, 2020.
 </em></small>
 
@@ -127,8 +127,10 @@ A gravity model is used as baseline model.
 First of all, the FAF data needed to be expanded, because it does not include the case of no transaction, we will add the case of zero.
 To meet Kaggle's memory limitations, whether the products are imported, exported or produced domestically is ignored in RF model. 
 We group the bilateral flow data by origination state, destination state, commodity type, transportation mode and year.
-As shown in Figure \ref{fig:problem}, the dotted-line is the no transaction situation, the flow from S2 to S1 in simplified figure is the sum of the flow export from foreign countries (transshipment via S2) and domestic flow produced in S2.
+As shown in Figure @fig:image1}, the dotted-line is the no transaction situation, the flow from S2 to S1 in simplified figure is the sum of the flow export from foreign countries (transshipment via S2) and domestic flow produced in S2.
+
 ![Problem definition: (up) FAF data, (middle) real situation, (down), simplified for random forest.](images/problem defination.png){#fig:image1}
+
 Random forest (RF) is a tree-based algorithm.
 The RF algorithm generates several independent trees through bootstrapping.
 Each tree randomly select predictor variables.
@@ -189,12 +191,13 @@ Using the same data as RF model mentioned above, the validation accuracy $r^2$ o
 
 
 ## Discussion
+
 ### Comparing the models
 
-We compare the different model results: (1) NN and RF models both shows better prediction performance for larger trade flow.
-Random Forest shows better results than Neural Network and gravity model.
+We compared the different model results. Among three models we employed, Random Forest showed the best prediction performance. We assume that the good performance of RF is due to (1) RF is good at deal with noise (2)   Also, NN and RF models both shows better prediction performance for larger trade flow.
 
-###Limitations
+
+### Limitations
 
 There are several limitations in this study. 
 Firstly, the distance used in this study is haversine distance. 
