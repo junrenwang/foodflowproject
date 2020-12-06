@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/2c4764d06fd0111dd20af3267e205481937134fe/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/))
 was automatically generated
-from [junrenwang/foodflowproject@2c4764d](https://github.com/junrenwang/foodflowproject/tree/2c4764d06fd0111dd20af3267e205481937134fe)
+from [junrenwang/foodflowproject@c5320dd](https://github.com/junrenwang/foodflowproject/tree/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e)
 on December 6, 2020.
 </em></small>
 
@@ -294,8 +294,8 @@ We compared the different model results. Among three models we employed, Random 
 
 There are several limitations in this study. 
 Firstly, the distance used in this study is haversine distance. 
-Also we didn't adjust the food flow value using GDP deflator to eliminate the impact of inflation. 
 In other words, we don't consider the transportation network connected each state. 
+Also we didn't adjust the food flow value using GDP deflator to eliminate the impact of inflation. 
 We don’t consider the commodities trade mode(Domestic, imports or exports) in Random Forest model.
 Meanwhile, we cannot predict zero value weight flow with Neural Network model. 
 
