@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/b3325a0900df731b737c0681cc10e2c36dc2b229/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b3325a0900df731b737c0681cc10e2c36dc2b229/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b3325a0900df731b737c0681cc10e2c36dc2b229/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/b3325a0900df731b737c0681cc10e2c36dc2b229/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/8d9afd0923ce41ce3341ce4b30c4b6f221140d28/))
 was automatically generated
-from [junrenwang/foodflowproject@b3325a0](https://github.com/junrenwang/foodflowproject/tree/b3325a0900df731b737c0681cc10e2c36dc2b229)
+from [junrenwang/foodflowproject@8d9afd0](https://github.com/junrenwang/foodflowproject/tree/8d9afd0923ce41ce3341ce4b30c4b6f221140d28)
 on December 6, 2020.
 </em></small>
 
@@ -317,8 +317,6 @@ Meanwhile, we cannot predict zero value weight flow with Neural Network model.
 [@Lin2019]: doi:10.1088/1748-9326/ab29ae
 
 [@Batarseh2020]: doi:10.17016/IFDP.2020.1296
-
-[@Batarseh2019]: arxiv: abs/1910.03112
 
 [@Konar2018]: doi:10.1371/journal.pone.0199498
 
