@@ -5,9 +5,10 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Junren Wang" />
+  <meta name="author" content="Akshay Pandit" />
   <meta name="dcterms.date" content="2020-12-06" />
   <meta name="keywords" content="Food flow, Random Forest, Neural Network" />
-  <title>Food Flow Project</title>
+  <title>manuscript</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -24,10 +25,6 @@
   Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Food Flow Project" />
-  <meta name="citation_title" content="Food Flow Project" />
-  <meta property="og:title" content="Food Flow Project" />
-  <meta property="twitter:title" content="Food Flow Project" />
   <meta name="dc.date" content="2020-12-06" />
   <meta name="citation_publication_date" content="2020-12-06" />
   <meta name="dc.language" content="en-US" />
@@ -37,16 +34,18 @@
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Junren Wang" />
-  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign" />
+  <meta name="citation_author" content="Akshay Pandit" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign" />
   <link rel="canonical" href="https://junrenwang.github.io/foodflowproject/" />
   <meta property="og:url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta property="twitter:url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_fulltext_html_url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_pdf_url" content="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/" />
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/" />
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -55,24 +54,27 @@
   <!-- end Manubot generated metadata -->
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">Food Flow Project</h1>
-</header>
 <p><small><em>
 This manuscript
-(<a href="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/">permalink</a>)
+(<a href="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/junrenwang/foodflowproject/tree/e78bf8fbb0138728260a53056a5a58f308ae2454">junrenwang/foodflowproject@e78bf8f</a>
+from <a href="https://github.com/junrenwang/foodflowproject/tree/bcf620644f7e3b48cda5d080ea5997ed49c22ad6">junrenwang/foodflowproject@bcf6206</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><strong>Junren Wang</strong><br>
+<li><p><strong>Junren Wang</strong><br>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
 <a href="https://github.com/junrenwang">junrenwang</a><br>
 <small>
-Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
-</small></li>
+Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign
+</small></p></li>
+<li><p><strong>Akshay Pandit</strong><br>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/Akshay163">Akshay163</a><br>
+<small>
+Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign
+</small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <p>United States has been a hub of bilateral trade, both internationally and domestically. In our study, we looked specifically at the food flows, i.e. the bilateral trade of food produce, on a domestic scale among its 50 states. We implemented two prevalent machine learning algorithms (Neural Networks and Random Forest) to predict the food flows. We also compared our results with one of the most sought-after models for bilateral trade, the gravity model to validate the relevance of application of machine learning models in our analysis. We find out that the random forest model is the best model out of all the three selected models with a <span class="math inline">\(R^2\)</span> score of 0.86. The gravity model performed quite poorly because of its linear nature which emphasizes the pertinence of non-linear models in food flow predictions.</p>

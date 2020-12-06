@@ -1,6 +1,7 @@
 ---
 author-meta:
 - Junren Wang
+- Akshay Pandit
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-06'
@@ -13,14 +14,6 @@ header-includes: '<!--
   -->
 
   <meta name="dc.format" content="text/html" />
-
-  <meta name="dc.title" content="Food Flow Project" />
-
-  <meta name="citation_title" content="Food Flow Project" />
-
-  <meta property="og:title" content="Food Flow Project" />
-
-  <meta property="twitter:title" content="Food Flow Project" />
 
   <meta name="dc.date" content="2020-12-06" />
 
@@ -40,7 +33,11 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Junren Wang" />
 
-  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author" content="Akshay Pandit" />
+
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign" />
 
   <link rel="canonical" href="https://junrenwang.github.io/foodflowproject/" />
 
@@ -54,11 +51,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -80,7 +77,6 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Food Flow Project
 ...
 
 
@@ -90,9 +86,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/))
 was automatically generated
-from [junrenwang/foodflowproject@e78bf8f](https://github.com/junrenwang/foodflowproject/tree/e78bf8fbb0138728260a53056a5a58f308ae2454)
+from [junrenwang/foodflowproject@bcf6206](https://github.com/junrenwang/foodflowproject/tree/bcf620644f7e3b48cda5d080ea5997ed49c22ad6)
 on December 6, 2020.
 </em></small>
 
@@ -104,7 +100,14 @@ on December 6, 2020.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [junrenwang](https://github.com/junrenwang)<br>
   <small>
-     Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+     Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign
+  </small>
+
++ **Akshay Pandit**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [Akshay163](https://github.com/Akshay163)<br>
+  <small>
+     Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign
   </small>
 
 

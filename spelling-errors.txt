@@ -1,3 +1,4 @@
+Akshay
 animaltotal
 becaues
 BTS
@@ -38,6 +39,7 @@ nans
 NN
 origst
 outmode
+Pandit
 perceptron
 PPML
 Preprocessing
