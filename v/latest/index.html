@@ -44,9 +44,9 @@
   <meta name="citation_fulltext_html_url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_pdf_url" content="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/" />
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/" />
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://junrenwang.github.io/foodflowproject/v/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397/">permalink</a>)
+(<a href="https://junrenwang.github.io/foodflowproject/v/1955a8015ed72b8801b3713dd92b5c612dd2a47d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/junrenwang/foodflowproject/tree/7bfc7a202f55c1b8f95e6caad9eee7e9f1862397">junrenwang/foodflowproject@7bfc7a2</a>
+from <a href="https://github.com/junrenwang/foodflowproject/tree/1955a8015ed72b8801b3713dd92b5c612dd2a47d">junrenwang/foodflowproject@1955a80</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -82,9 +82,13 @@ A gravity model is used as baseline model.</p>
 <p>First of all, the FAF data needed to be expanded, because it does not include the case of no transaction, we will add the case of zero.
 To meet Kaggle’s memory limitations, whether the products are imported, exported or produced domestically is ignored in RF model.
 We group the bilateral flow data by origination state, destination state, commodity type, transportation mode and year.
-As shown in Figure , the dotted-line is the no transaction situation, the flow from S2 to S1 in simplified figure is the sum of the flow export from foreign countries (transshipment via S2) and domestic flow produced in S2.
-<img src="images/problem%20defination.png" id="fig:image1" alt="Problem definition: (up) FAF data, (middle) real situation, (down), simplified for random forest." />
-Random forest (RF) is a tree-based algorithm.
+As shown in Figure <a href="#fig:image1">1</a>}, the dotted-line is the no transaction situation, the flow from S2 to S1 in simplified figure is the sum of the flow export from foreign countries (transshipment via S2) and domestic flow produced in S2.</p>
+<div id="fig:image1" class="fignos">
+<figure>
+<img src="images/problem%20defination.png" alt="" /><figcaption><span>Figure 1:</span> Problem definition: (up) FAF data, (middle) real situation, (down), simplified for random forest.</figcaption>
+</figure>
+</div>
+<p>Random forest (RF) is a tree-based algorithm.
 The RF algorithm generates several independent trees through bootstrapping.
 Each tree randomly select predictor variables.
 The final output is determined by the average results of all trees.
@@ -131,9 +135,8 @@ The validation <span class="math inline">\(r^2\)</span> is 0.86. RF model shows 
 <p>Using the same data as RF model mentioned above, the validation accuracy <span class="math inline">\(r^2\)</span> of Ridge model is 0.049 because there are so many zeros in the dataset.</p>
 <h2 id="discussion">Discussion</h2>
 <h3 id="comparing-the-models">Comparing the models</h3>
-<p>We compare the different model results: (1) NN and RF models both shows better prediction performance for larger trade flow.
-Random Forest shows better results than Neural Network and gravity model.</p>
-<p>###Limitations</p>
+<p>We compared the different model results. Among three models we employed, Random Forest showed the best prediction performance. We assume that the good performance of RF is due to (1) RF is good at deal with noise (2) Also, NN and RF models both shows better prediction performance for larger trade flow.</p>
+<h3 id="limitations">Limitations</h3>
 <p>There are several limitations in this study.
 Firstly, the distance used in this study is haversine distance.
 In other words, we don’t consider the transportation route.
