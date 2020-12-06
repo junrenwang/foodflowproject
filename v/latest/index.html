@@ -44,9 +44,9 @@
   <meta name="citation_fulltext_html_url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_pdf_url" content="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/" />
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/">permalink</a>)
+(<a href="https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/junrenwang/foodflowproject/tree/781b902ca68bdc63462fc13b2d6f614a73320cae">junrenwang/foodflowproject@781b902</a>
+from <a href="https://github.com/junrenwang/foodflowproject/tree/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42">junrenwang/foodflowproject@e99234d</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -158,15 +158,14 @@ As we specified the commodity type and transportation mode, there is no group va
 </div>
 <h2 id="discussion">Discussion</h2>
 <h3 id="comparing-the-models">Comparing the models</h3>
-<p>We compared the different model results. Among three models we employed, Random Forest showed the best prediction performance. We assume that the good performance of RF is due to (1) RF is good at deal with noise (2) Also, NN and RF models both shows better prediction performance for larger trade flow.</p>
+<p>We compared the different model results. Among three models we employed, Random Forest showed the best prediction performance. We assume that the good performance of RF is due to (1) RF is good at deal with noise (2) RF can capture the nonlinear relationship, Also, NN and RF models both showed better prediction performance for larger trade flow. We thinks that small trade flow might be impacted on more complex variables, which cannot be predicted by the</p>
 <h3 id="limitations">Limitations</h3>
 <p>There are several limitations in this study.
 Firstly, the distance used in this study is haversine distance.
-In other words, we don’t consider the transportation route.
-The random forest might underfit, we try several hyperparameters under the limitation of long time computing time for Random Forest.
+Also we didn’t adjust the food flow value using GDP deflator to eliminate the impact of inflation.
+In other words, we don’t consider the transportation network connected each state.
 We don’t consider the commodities trade mode(Domestic, imports or exports) in Random Forest model.
-At the same time, different years also have a great impact on transactions, which may be due to the impact of inflation.
-We should add GDP deflator to eliminate this impact.</p>
+Meanwhile, we cannot predict zero value weight flow with Neural Network model.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
