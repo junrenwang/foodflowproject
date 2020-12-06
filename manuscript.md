@@ -51,11 +51,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -86,9 +86,9 @@ manubot-requests-cache-path: ci/cache/requests-cache
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/b8e5a0fd9a12eb946768dd7178b89325112e4359/))
 was automatically generated
-from [junrenwang/foodflowproject@03ad28a](https://github.com/junrenwang/foodflowproject/tree/03ad28a466bfbe7bcab390d789fe119e6cb1bf21)
+from [junrenwang/foodflowproject@b8e5a0f](https://github.com/junrenwang/foodflowproject/tree/b8e5a0fd9a12eb946768dd7178b89325112e4359)
 on December 6, 2020.
 </em></small>
 
@@ -291,9 +291,9 @@ Meanwhile, we cannot predict zero value weight flow with Neural Network model.
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 
-[@Munisamy2020]https://doi.org/10.3386/w27151
+[@Munisamy2020]doi:10.3386/w27151
 
-[@Lin2019]https://doi.org/10.1088/1748-9326/ab29ae
+[@Lin2019]doi:10.1088/1748-9326/ab29ae
 
 [@Batarseh2020]http://dx.doi.org/10.17016/IFDP.2020.1296
 
