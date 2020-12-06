@@ -47,9 +47,9 @@
   <meta name="citation_fulltext_html_url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_pdf_url" content="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/" />
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -63,9 +63,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/">permalink</a>)
+(<a href="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/junrenwang/foodflowproject/tree/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e">junrenwang/foodflowproject@c5320dd</a>
+from <a href="https://github.com/junrenwang/foodflowproject/tree/6bc238349b165632b6a61f466dcd9d1292b22eec">junrenwang/foodflowproject@6bc2383</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -117,8 +117,18 @@ fr: Foreign. Trade across borders. We won’t be considering this data for our a
 Next, we introduced the remaining data from their respective files.</p>
 <h4 id="data-preprocessing">Data Preprocessing</h4>
 <p>In the exploratory data analysis, we manipulated the data to find appropriate features for the model. There are 39 features in total. In this analysis, we removed self-loops in the food flow network, i.e. the origin and destination of the domestic flows being the same.
-Before moving towards building the neural network, we formatted the data type of different features to meet the model requirements (i.e. categorical or numerical). To obtain categorical features, we create a function that takes the string value of the column and return the whole data-frame with a new one-hot encoded feature for the feature fed to the function. We also carefully removed some null values in many features to not lose any valuable data values. This was done by removing the features with missing percentage greater than 30%. To spot any collinearity and anomalies that might affect our results, we produced the correlation matrix and histogram of all variables (refer figures).
-Most of the crop production values are right tailed which means that we need to normalize the data before we feed it to our model. Also, we notice that the “value” feature is highly concentrated at one bin. The standard deviation for the dataset is very high and the quantile values are quite low, which suggests that we need to remove the major outliers from the dataset.</p>
+Before moving towards building the neural network, we formatted the data type of different features to meet the model requirements (i.e. categorical or numerical). To obtain categorical features, we create a function that takes the string value of the column and return the whole data-frame with a new one-hot encoded feature for the feature fed to the function. We also carefully removed some null values in many features to not lose any valuable data values. This was done by removing the features with missing percentage greater than 30%. To spot any collinearity and anomalies that might affect our results, we produced the correlation matrix and histogram of all variables as shown below.</p>
+<div id="fig:image6" class="fignos">
+<figure>
+<img src="images/corr_matrix.PNG" alt="" /><figcaption><span>Figure 1:</span> Correlation Matrix</figcaption>
+</figure>
+</div>
+<div id="fig:image7" class="fignos">
+<figure>
+<img src="images/hist_fig.PNG" alt="" /><figcaption><span>Figure 2:</span> Histogram</figcaption>
+</figure>
+</div>
+<p>Most of the crop production values are right tailed which means that we need to normalize the data before we feed it to our model. Also, we notice that the “value” feature is highly concentrated at one bin. The standard deviation for the dataset is very high and the quantile values are quite low, which suggests that we need to remove the major outliers from the dataset.</p>
 <h3 id="model">Model</h3>
 <h4 id="neural-network">Neural network</h4>
 <p>In this analysis, we used neural network to predict the food flow between US states. We used two hidden layers with 30 and 12 neurons respectively with ReLu activation function. We used Adam optimizer function with a learning rate of 0.001, “mean squared error” loss function and RMSE as the metric. Batch size of 100 was considered with a validation split of 0.2 and number of epochs equals to 25. The results of the model run are discussed in the results and discussion section.</p>
@@ -126,10 +136,10 @@ Most of the crop production values are right tailed which means that we need to 
 <p>First of all, the FAF data needed to be expanded, because it does not include the case of no transaction, we will add the case of zero.
 To meet Kaggle’s memory limitations, whether the products are imported, exported or produced domestically is ignored in RF model.
 We group the bilateral flow data by origination state, destination state, commodity type, transportation mode and year.
-As shown in Figure <a href="#fig:image1">1</a>, the dotted-line is the no transaction situation, the flow from S2 to S1 in simplified figure is the sum of the flow export from foreign countries (transshipment via S2) and domestic flow produced in S2.</p>
+As shown in Figure <a href="#fig:image1">3</a>, the dotted-line is the no transaction situation, the flow from S2 to S1 in simplified figure is the sum of the flow export from foreign countries (transshipment via S2) and domestic flow produced in S2.</p>
 <div id="fig:image1" class="fignos">
 <figure>
-<img src="images/problem%20defination.png" alt="" /><figcaption><span>Figure 1:</span> Problem definition: (up) FAF data, (middle) real situation, (down), simplified for random forest.</figcaption>
+<img src="images/problem%20defination.png" alt="" /><figcaption><span>Figure 3:</span> Problem definition: (up) FAF data, (middle) real situation, (down), simplified for random forest.</figcaption>
 </figure>
 </div>
 <p>Random forest (RF) is a tree-based algorithm.
@@ -167,19 +177,19 @@ The gravity model calculate the <span class="math inline">\(origst\times year\)<
 <p>As we saw in the last section, the selected value for the number of layers and neurons is 2, and 30 and 12 respectively. These specific values were selected by trying out multiple different layers and neurons combination to find the most efficient structure. The learning rate was kept at 0.001 with a batch size of 100. We find out that the <span class="math inline">\(R^2\)</span> score for the model came out to be 0.43. The figure below shows the scatter plot of the real test values vs the prediction.</p>
 <div id="fig:image5" class="fignos">
 <figure>
-<img src="images/nn_figure.PNG" alt="" /><figcaption><span>Figure 2:</span> Neuron Network Result.</figcaption>
+<img src="images/nn_figure.PNG" alt="" /><figcaption><span>Figure 4:</span> Neuron Network Result.</figcaption>
 </figure>
 </div>
 <h3 id="random-forest-1">Random Forest</h3>
 <p>Through GridSearching, the hyperparameters we selected was 20 for max depth of tree and 50 for number of independent tree.
-Figure <a href="#fig:image2">3</a> shows the estimation results.
+Figure <a href="#fig:image2">5</a> shows the estimation results.
 The validation <span class="math inline">\(r^2\)</span> is 0.86. RF model shows the better performance for the large flow.</p>
 <div id="fig:image2" class="fignos">
 <figure>
-<img src="images/RFestimationresults.png" alt="" /><figcaption><span>Figure 3:</span> Random Forest Prediction Result.</figcaption>
+<img src="images/RFestimationresults.png" alt="" /><figcaption><span>Figure 5:</span> Random Forest Prediction Result.</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:image3">4</a> shows the importance of features on this bilateral food flow regression problem.</p>
+<p>Figure <a href="#fig:image3">6</a> shows the importance of features on this bilateral food flow regression problem.</p>
 <p>The red bars are the importance of the forest with inter-trees variability.<br />
 As expected, commodity type, gdp of importors and gdp of exporters are informative.
 Surprisingly, distance and year shows less impact on the regressiom results.
@@ -187,16 +197,16 @@ The performance of the distance variable is inconsistent with the law of the gra
 We consider that this may be becaues we use the log of harversine distance.</p>
 <div id="fig:image3" class="fignos">
 <figure>
-<img src="images/features%20importance.png" alt="" /><figcaption><span>Figure 4:</span> Random Forest Feature Importance.features 0:21(‘value’,‘income_dms_origst’, ‘income_dms_destst’, ‘animaltotal_dms_origst’, ‘animaltotal_dms_destst’, ‘barley_dms_origst’, ‘barley_dms_destst’, ‘corn_dms_origst’, ‘corn_dms_destst’, ‘crop_total_dms_origst’, ‘crop_total_dms_destst’, ‘honey_dms_origst’, ‘honey_dms_destst’, ‘milk_dms_origst’, ‘milk_dms_destst’, ‘oats_dms_origst’, ‘oats_dms_destst’, ‘wheat_dms_origst’, ‘wheat_dms_destst’, ‘gdp_dms_origst’, ‘gdp_dms_destst’, ‘distance’),22:72 (dms_origst),73:123 ( dms_destst),124:130 (transportation mode), 131:137 (commodity type), 138:142 (year)</figcaption>
+<img src="images/features%20importance.png" alt="" /><figcaption><span>Figure 6:</span> Random Forest Feature Importance.features 0:21(‘value’,‘income_dms_origst’, ‘income_dms_destst’, ‘animaltotal_dms_origst’, ‘animaltotal_dms_destst’, ‘barley_dms_origst’, ‘barley_dms_destst’, ‘corn_dms_origst’, ‘corn_dms_destst’, ‘crop_total_dms_origst’, ‘crop_total_dms_destst’, ‘honey_dms_origst’, ‘honey_dms_destst’, ‘milk_dms_origst’, ‘milk_dms_destst’, ‘oats_dms_origst’, ‘oats_dms_destst’, ‘wheat_dms_origst’, ‘wheat_dms_destst’, ‘gdp_dms_origst’, ‘gdp_dms_destst’, ‘distance’),22:72 (dms_origst),73:123 ( dms_destst),124:130 (transportation mode), 131:137 (commodity type), 138:142 (year)</figcaption>
 </figure>
 </div>
 <h3 id="baseline">Baseline</h3>
 <p>Using the same data as RF model mentioned above, the validation accuracy <span class="math inline">\(r^2\)</span> of Ridge model is 0.049 because there are so many zeros in the dataset.
-We fitted gravity model to bilateral food flow data with PPML estimator, as shown in Figure <a href="#fig:image4">5</a>.
+We fitted gravity model to bilateral food flow data with PPML estimator, as shown in Figure <a href="#fig:image4">7</a>.
 As we specified the commodity type and transportation mode, there is no group variance. But the average <span class="math inline">\(r^2\)</span> for different commodity and transportation condition is about 0.25.</p>
 <div id="fig:image4" class="fignos">
 <figure>
-<img src="images/gravity%20model%20result.png" alt="" /><figcaption><span>Figure 5:</span> Gravity model for specific commodity and transportation mode.</figcaption>
+<img src="images/gravity%20model%20result.png" alt="" /><figcaption><span>Figure 7:</span> Gravity model for specific commodity and transportation mode.</figcaption>
 </figure>
 </div>
 <h2 id="discussion">Discussion</h2>

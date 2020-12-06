@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/))
 was automatically generated
-from [junrenwang/foodflowproject@c5320dd](https://github.com/junrenwang/foodflowproject/tree/c5320dd79472bdff3e9ec48e01b2ed8ba05c301e)
+from [junrenwang/foodflowproject@6bc2383](https://github.com/junrenwang/foodflowproject/tree/6bc238349b165632b6a61f466dcd9d1292b22eec)
 on December 6, 2020.
 </em></small>
 
@@ -185,7 +185,12 @@ Next, we introduced the remaining data from their respective files.
 
 #### Data Preprocessing
 In the exploratory data analysis, we manipulated the data to find appropriate features for the model. There are 39 features in total. In this analysis, we removed self-loops in the food flow network, i.e. the origin and destination of the domestic flows being the same.
-Before moving towards building the neural network, we formatted the data type of different features to meet the model requirements (i.e. categorical or numerical).  To obtain categorical features, we create a function that takes the string value of the column and return the whole data-frame with a new one-hot encoded feature for the feature fed to the function. We also carefully removed some null values in many features to not lose any valuable data values. This was done by removing the features with missing percentage greater than 30%. To spot any collinearity and anomalies that might affect our results, we produced the correlation matrix and histogram of all variables (refer figures).
+Before moving towards building the neural network, we formatted the data type of different features to meet the model requirements (i.e. categorical or numerical).  To obtain categorical features, we create a function that takes the string value of the column and return the whole data-frame with a new one-hot encoded feature for the feature fed to the function. We also carefully removed some null values in many features to not lose any valuable data values. This was done by removing the features with missing percentage greater than 30%. To spot any collinearity and anomalies that might affect our results, we produced the correlation matrix and histogram of all variables as shown below.
+
+![Correlation Matrix](images/corr_matrix.PNG){#fig:image6}
+
+![Histogram](images/hist_fig.PNG){#fig:image7}
+
 Most of the crop production values are right tailed which means that we need to normalize the data before we feed it to our model. Also, we notice that the "value" feature is highly concentrated at one bin. The standard deviation for the dataset is very high and the quantile values are quite low, which suggests that we need to remove the major outliers from the dataset.
 
 
@@ -317,3 +322,8 @@ Meanwhile, we cannot predict zero value weight flow with Neural Network model.
 [@Konar2018]:doi:10.1371/journal.pone.0199498
 
 [@Smith2017]:doi:10.1073/pnas.1703793114
+
+
+[@antaki2008]: doi:10.1515/TEXT.2008.001
+
+[@stevanovic2017]: doi:10.1016/j.lcsi.2017.06.001
