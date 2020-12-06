@@ -22,10 +22,10 @@ content/03.Method.md:50:dataset
 content/03.Method.md:50:FAF
 content/04.Result.md:4:GridSearching
 content/04.Result.md:4:hyperparameters
-content/04.Result.md:12:importors
-content/04.Result.md:13:regressiom
-content/04.Result.md:17:dataset
-content/04.Result.md:18:PPML
+content/04.Result.md:13:importors
+content/04.Result.md:14:regressiom
+content/04.Result.md:19:dataset
+content/04.Result.md:20:PPML
 content/05.Discussions.md:5:NN
 content/05.Discussions.md:11:haversine
 content/05.Discussions.md:13:hyperparameters

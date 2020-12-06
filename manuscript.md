@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8/))
 was automatically generated
-from [junrenwang/foodflowproject@7747ef3](https://github.com/junrenwang/foodflowproject/tree/7747ef378018e7a30e01af0842880fa782a2c4cb)
+from [junrenwang/foodflowproject@f55f97a](https://github.com/junrenwang/foodflowproject/tree/f55f97ae9bff6eaf21ced2a2677aa78ac9a170b8)
 on December 6, 2020.
 </em></small>
 
@@ -182,16 +182,18 @@ distance
 ## Result
 
 ### Random Forest
-Through GridSearching, the hyperparameters we select is max depth (20) and number of estimators (50).
-Figure @  shows the estimation results. 
+Through GridSearching, the hyperparameters we selected is 20 for max depth of tree and 50 for number of independent tree.
+Figure @fig:image2 shows the estimation results. 
 The validation $r^2$ is 0.86. RF model shows the better performance for the large flow.
 
 ![Random Forest Prediction Result.](images/RFestimationresults.png){#fig:image2}
 
 Figure @fig:image3 shows the importance of features on this bilateral food flow regression problem.
+
 The red bars are the importance of the forest with inter-trees variability.  
 As expected, commodity type, gdp of importors and gdp of exporters are informative. 
-Surprisingly, distance and year shows less impact on the regressiom results.   
+Surprisingly, distance and year shows less impact on the regressiom results. 
+
 ![Random Forest Feature Importance.](images/features importance.png){#fig:image3}
 
 ### Baseline
