@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/junrenwang/foodflowproject/tree/gh-pages) branch hosts the contents of this directory at <https://junrenwang.github.io/foodflowproject/>.
-The permalink for this webpage version is <https://junrenwang.github.io/foodflowproject/v/283b6bb3d1500bad0abeec2595f96b1dd40f8c8c/>.
+The permalink for this webpage version is <https://junrenwang.github.io/foodflowproject/v/fe2f7a5228c2f583bc91bd630e0548b05d8773f6/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://junrenwang.github.io/foodflowproject/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`283b6bb3d1500bad0abeec2595f96b1dd40f8c8c`](https://github.com/junrenwang/foodflowproject/commit/283b6bb3d1500bad0abeec2595f96b1dd40f8c8c).
+[`fe2f7a5228c2f583bc91bd630e0548b05d8773f6`](https://github.com/junrenwang/foodflowproject/commit/fe2f7a5228c2f583bc91bd630e0548b05d8773f6).
