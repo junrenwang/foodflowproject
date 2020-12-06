@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/b4101a63bec077949e533e282651dc51ae9e7e5e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b4101a63bec077949e533e282651dc51ae9e7e5e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/b4101a63bec077949e533e282651dc51ae9e7e5e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/b4101a63bec077949e533e282651dc51ae9e7e5e/))
 was automatically generated
-from [junrenwang/foodflowproject@cca7017](https://github.com/junrenwang/foodflowproject/tree/cca7017a621c6b4518a54ac2311442cf94e7a919)
+from [junrenwang/foodflowproject@b4101a6](https://github.com/junrenwang/foodflowproject/tree/b4101a63bec077949e533e282651dc51ae9e7e5e)
 on December 6, 2020.
 </em></small>
 
@@ -189,7 +189,8 @@ Next, we introduced the remaining data from their respective files.
 In the exploratory data analysis, we manipulated the data to find appropriate features for the model. There are 39 features in total. In this analysis, we removed self-loops in the food flow network, i.e. the origin and destination of the domestic flows being the same.
 Before moving towards building the neural network, we formatted the data type of different features to meet the model requirements (i.e. categorical or numerical).  To obtain categorical features, we create a function that takes the string value of the column and return the whole data-frame with a new one-hot encoded feature for the feature fed to the function. We also carefully removed some null values in many features to not lose any valuable data values. This was done by removing the features with missing percentage greater than 30%. To spot any collinearity and anomalies that might affect our results, we produced the correlation matrix and histogram of all variables as shown below.
 
-![Correlation Matrix](images/corr_matrix.PNG){#fig:image6}
+![Correlation Matrix](images/corr_matrix.png){#fig:image6}
+
 
 ![Histogram](images/hist_fig.PNG){#fig:image7}
 
