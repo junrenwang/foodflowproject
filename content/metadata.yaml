@@ -1,5 +1,5 @@
 ---
-title: "Food Flow Project"
+Title: "Food Flow Project"
 keywords:
   - Food flow
   - Random Forest
@@ -12,4 +12,12 @@ authors:
 
     email: junrenw2@illinois.edu
     affiliations:
-      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+      - Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign
+  - github: Akshay163
+    name: Akshay Pandit
+    initials: AP
+
+    email: apandit2@illinois.edu
+    affiliations:
+      - Department of Civil and Environmental Engineering, University Illinois at Urbana-Champaign
+
