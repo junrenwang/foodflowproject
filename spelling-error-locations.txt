@@ -24,7 +24,8 @@ content/04.Result.md:4:GridSearching
 content/04.Result.md:4:hyperparameters
 content/04.Result.md:13:importors
 content/04.Result.md:14:regressiom
-content/04.Result.md:15:harversine
+content/04.Result.md:16:becaues
+content/04.Result.md:16:harversine
 content/04.Result.md:23:dataset
 content/04.Result.md:24:PPML
 content/05.Discussions.md:5:NN

@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/))
 was automatically generated
-from [junrenwang/foodflowproject@48d5eaf](https://github.com/junrenwang/foodflowproject/tree/48d5eaf078f3bec6d81aa1b8576f7f5b7bedc665)
+from [junrenwang/foodflowproject@781b902](https://github.com/junrenwang/foodflowproject/tree/781b902ca68bdc63462fc13b2d6f614a73320cae)
 on December 6, 2020.
 </em></small>
 
@@ -193,18 +193,17 @@ Figure @fig:image3 shows the importance of features on this bilateral food flow 
 The red bars are the importance of the forest with inter-trees variability.  
 As expected, commodity type, gdp of importors and gdp of exporters are informative. 
 Surprisingly, distance and year shows less impact on the regressiom results. 
-The performance of the distance variable is inconsistent with the law of the gravity model, and we consider that this may be due to the harversine distance we use.
+The performance of the distance variable is inconsistent with the law of the gravity model.
+We consider that this may be becaues we use the log of harversine distance.
 
-![Random Forest Feature Importance.](images/features importance.png){#fig:image3}
-#####features0:21['value','income_dms_origst', 'income_dms_destst', 'animaltotal_dms_origst', 'animaltotal_dms_destst', 'barley_dms_origst', 'barley_dms_destst', 'corn_dms_origst', 'corn_dms_destst', 'crop_total_dms_origst', 'crop_total_dms_destst', 'honey_dms_origst', 'honey_dms_destst', 'milk_dms_origst', 'milk_dms_destst', 'oats_dms_origst', 'oats_dms_destst', 'wheat_dms_origst', 'wheat_dms_destst', 'gdp_dms_origst', 'gdp_dms_destst', 'distance’]
-22:72  :dms_origst
-73:123: dms_destst
+![Random Forest Feature Importance.features 0:21('value','income_dms_origst', 'income_dms_destst', 'animaltotal_dms_origst', 'animaltotal_dms_destst', 'barley_dms_origst', 'barley_dms_destst', 'corn_dms_origst', 'corn_dms_destst', 'crop_total_dms_origst', 'crop_total_dms_destst', 'honey_dms_origst', 'honey_dms_destst', 'milk_dms_origst', 'milk_dms_destst', 'oats_dms_origst', 'oats_dms_destst', 'wheat_dms_origst', 'wheat_dms_destst', 'gdp_dms_origst', 'gdp_dms_destst', 'distance’),22:72 (dms_origst),73:123 ( dms_destst),124:130 (transportation mode), 131:137 (commodity type), 138:142 (year)](images/features importance.png){#fig:image3}
+
+
 
 ### Baseline
 Using the same data as RF model mentioned above, the validation accuracy $r^2$ of Ridge model is 0.049 because there are so many zeros in the dataset. 
 We fitted gravity model to bilateral food flow data with PPML estimator, as shown in Figure @fig:image4.
-As we specified the commodity type and transportation mode, there is no group variance. 
-
+As we specified the commodity type and transportation mode, there is no group variance. But the average $r^2$ for different commodity and transportation condition is about 0.25.  
 
 ![Gravity model for specific commodity and transportation mode.](images/gravity model result.png){#fig:image4}
 
