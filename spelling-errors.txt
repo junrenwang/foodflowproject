@@ -26,5 +26,4 @@ Psedo
 regressiom
 sctg
 transcations
-underfit
 Urbana

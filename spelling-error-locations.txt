@@ -30,6 +30,4 @@ content/04.Result.md:23:dataset
 content/04.Result.md:24:PPML
 content/05.Discussions.md:5:NN
 content/05.Discussions.md:11:haversine
-content/05.Discussions.md:13:hyperparameters
-content/05.Discussions.md:13:underfit
-content/05.Discussions.md:16:deflator
+content/05.Discussions.md:12:deflator

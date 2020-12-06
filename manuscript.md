@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/781b902ca68bdc63462fc13b2d6f614a73320cae/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42/))
 was automatically generated
-from [junrenwang/foodflowproject@781b902](https://github.com/junrenwang/foodflowproject/tree/781b902ca68bdc63462fc13b2d6f614a73320cae)
+from [junrenwang/foodflowproject@e99234d](https://github.com/junrenwang/foodflowproject/tree/e99234d83ae0c2b0e6f87f4dd92cfc1c8047cf42)
 on December 6, 2020.
 </em></small>
 
@@ -212,18 +212,17 @@ As we specified the commodity type and transportation mode, there is no group va
 
 ### Comparing the models
 
-We compared the different model results. Among three models we employed, Random Forest showed the best prediction performance. We assume that the good performance of RF is due to (1) RF is good at deal with noise (2)   Also, NN and RF models both shows better prediction performance for larger trade flow.
+We compared the different model results. Among three models we employed, Random Forest showed the best prediction performance. We assume that the good performance of RF is due to (1) RF is good at deal with noise (2) RF can capture the nonlinear relationship, Also, NN and RF models both showed better prediction performance for larger trade flow. We thinks that small trade flow might be impacted on more complex variables, which cannot be predicted by the 
 
 
 ### Limitations
 
 There are several limitations in this study. 
 Firstly, the distance used in this study is haversine distance. 
-In other words, we don't consider the transportation route. 
-The random forest might underfit,  we try several hyperparameters  under the limitation of long time computing time for Random Forest. 
+Also we didn't adjust the food flow value using GDP deflator to eliminate the impact of inflation. 
+In other words, we don't consider the transportation network connected each state. 
 We don’t consider the commodities trade mode(Domestic, imports or exports) in Random Forest model.
-At the same time, different years also have a great impact on transactions, which may be due to the impact of inflation. 
-We should add GDP deflator to eliminate this impact.
+Meanwhile, we cannot predict zero value weight flow with Neural Network model. 
 
 
 
