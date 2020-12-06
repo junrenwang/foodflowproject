@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/2d3da95821f57f07ca14e7484562aa3412f7ae56/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/2d3da95821f57f07ca14e7484562aa3412f7ae56/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/2d3da95821f57f07ca14e7484562aa3412f7ae56/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/6bc238349b165632b6a61f466dcd9d1292b22eec/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/2d3da95821f57f07ca14e7484562aa3412f7ae56/))
 was automatically generated
-from [junrenwang/foodflowproject@6bc2383](https://github.com/junrenwang/foodflowproject/tree/6bc238349b165632b6a61f466dcd9d1292b22eec)
+from [junrenwang/foodflowproject@2d3da95](https://github.com/junrenwang/foodflowproject/tree/2d3da95821f57f07ca14e7484562aa3412f7ae56)
 on December 6, 2020.
 </em></small>
 
@@ -311,17 +311,17 @@ Meanwhile, we cannot predict zero value weight flow with Neural Network model.
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 
-[@Munisamy2020]:doi:10.3386/w27151
+[@Munisamy2020]: doi:10.3386/w27151
 
-[@Lin2019]:doi:10.1088/1748-9326/ab29ae
+[@Lin2019]: doi:10.1088/1748-9326/ab29ae
 
-[@Batarseh2020]:doi:10.17016/IFDP.2020.1296
+[@Batarseh2020]: doi:10.17016/IFDP.2020.1296
 
 [@Batarseh2019]https://arxiv.org/abs/1910.03112
 
-[@Konar2018]:doi:10.1371/journal.pone.0199498
+[@Konar2018]: doi:10.1371/journal.pone.0199498
 
-[@Smith2017]:doi:10.1073/pnas.1703793114
+[@Smith2017]: doi:10.1073/pnas.1703793114
 
 
 [@antaki2008]: doi:10.1515/TEXT.2008.001
