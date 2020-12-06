@@ -44,9 +44,9 @@
   <meta name="citation_fulltext_html_url" content="https://junrenwang.github.io/foodflowproject/" />
   <meta name="citation_pdf_url" content="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/" />
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/" />
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,9 +60,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/">permalink</a>)
+(<a href="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/junrenwang/foodflowproject/tree/7c0535d9952964476e4ed3491dccb1a208688a45">junrenwang/foodflowproject@7c0535d</a>
+from <a href="https://github.com/junrenwang/foodflowproject/tree/7747ef378018e7a30e01af0842880fa782a2c4cb">junrenwang/foodflowproject@7747ef3</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -136,16 +136,18 @@ The validation <span class="math inline">\(r^2\)</span> is 0.86. RF model shows 
 <img src="images/RFestimationresults.png" alt="" /><figcaption><span>Figure 2:</span> Random Forest Prediction Result.</figcaption>
 </figure>
 </div>
-<div id="fig:image3" class="fignos">
-<figure>
-<img src="images/features%20importance.png" alt="" /><figcaption><span>Figure 3:</span> Random Forest Feature Importance.</figcaption>
-</figure>
-</div>
+<p>Figure ?? shows the importance of features on this bilateral food flow regression problem.
+The red bars are the importance of the forest with inter-trees variability.<br />
+As expected, commodity type, gdp of importors and gdp of exporters are informative.
+Surprisingly, distance and year shows less impact on the regressiom results.<br />
+<img src="images/features%20importance.png" id="fig:image3" alt="Random Forest Feature Importance." /></p>
 <h3 id="baseline">Baseline</h3>
-<p>Using the same data as RF model mentioned above, the validation accuracy <span class="math inline">\(r^2\)</span> of Ridge model is 0.049 because there are so many zeros in the dataset.</p>
+<p>Using the same data as RF model mentioned above, the validation accuracy <span class="math inline">\(r^2\)</span> of Ridge model is 0.049 because there are so many zeros in the dataset.
+We fitted gravity model to bilateral food flow data with PPML estimator, as shown in Figure <a href="#fig:image4">3</a>.
+As we specified the commodity type and transportation mode, there is no group variance.</p>
 <div id="fig:image4" class="fignos">
 <figure>
-<img src="images/gravity%20model%20result.png" alt="" /><figcaption><span>Figure 4:</span> Silent disco equipment repurposed.</figcaption>
+<img src="images/gravity%20model%20result.png" alt="" /><figcaption><span>Figure 3:</span> Gravity model for specific commodity and transportation mode.</figcaption>
 </figure>
 </div>
 <h2 id="discussion">Discussion</h2>
