@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/8199445119955c46c0dcd26ad0596bb85c6296c8/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/8199445119955c46c0dcd26ad0596bb85c6296c8/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/8199445119955c46c0dcd26ad0596bb85c6296c8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/8199445119955c46c0dcd26ad0596bb85c6296c8/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/e78bf8fbb0138728260a53056a5a58f308ae2454/))
 was automatically generated
-from [junrenwang/foodflowproject@8199445](https://github.com/junrenwang/foodflowproject/tree/8199445119955c46c0dcd26ad0596bb85c6296c8)
+from [junrenwang/foodflowproject@e78bf8f](https://github.com/junrenwang/foodflowproject/tree/e78bf8fbb0138728260a53056a5a58f308ae2454)
 on December 6, 2020.
 </em></small>
 
@@ -280,5 +280,14 @@ Meanwhile, we cannot predict zero value weight flow with Neural Network model.
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 
+[@Munisamy2020]https://doi.org/10.3386/w27151
 
-[@Munisamy2020]: DOI 10.3386/w27151
+[@Lin2019]https://doi.org/10.1088/1748-9326/ab29ae
+
+[@Batarseh2020]http://dx.doi.org/10.17016/IFDP.2020.1296
+
+[@Batarseh2019]https://arxiv.org/abs/1910.03112
+
+[@Konar2018]https://doi.org/10.1371/journal.pone.0199498
+
+[@Smith2017]https://doi.org/10.1073/pnas.1703793114
