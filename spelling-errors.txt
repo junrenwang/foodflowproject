@@ -49,7 +49,7 @@ regressiom
 regressor
 ReLu
 RMSE
-sctg
+SCTG
 SGD
 SMC
 sqaure
