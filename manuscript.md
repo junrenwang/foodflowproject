@@ -51,11 +51,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -86,9 +86,9 @@ manubot-requests-cache-path: ci/cache/requests-cache
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/bcf620644f7e3b48cda5d080ea5997ed49c22ad6/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/03ad28a466bfbe7bcab390d789fe119e6cb1bf21/))
 was automatically generated
-from [junrenwang/foodflowproject@bcf6206](https://github.com/junrenwang/foodflowproject/tree/bcf620644f7e3b48cda5d080ea5997ed49c22ad6)
+from [junrenwang/foodflowproject@03ad28a](https://github.com/junrenwang/foodflowproject/tree/03ad28a466bfbe7bcab390d789fe119e6cb1bf21)
 on December 6, 2020.
 </em></small>
 
@@ -149,9 +149,8 @@ Distance: To calculate the distance between states, we used the latitude and lon
 
 Income and GDP: We obtained economic data, i.e. income and GDP data from Bureau of Economic Analysis portal. For income we used income per capita values. All the values are measured in million dollars.
 
-### Neural network
-
-### EDA
+### Data Cleaning
+#### EDA
 The EDA is divided into two sections. First is Data Cleaning where we go through various key datasets and tidy them up so that they all can work together. In the second section, we will be looking at their distributions and their possible correlation between each other.
 To begin with, we load the data for food flow. The data has coded features which has relevant meaning. They are described below.
 fr: Foreign. Trade across borders. We won't be considering this data for our analysis as we are focussed on food flows among US states.
@@ -173,19 +172,26 @@ sctg2: Food category. This is a standard code used by Bureau of Trade Statistics
 value: value of food in dollars. tons: food value in weight.
 
 After introducing the flow data, we utilized the latitude and longitude of states to calculate the haversine distance between origin and destination of food flows.
-Next, we introduced the remaining data from their respective files. Eventually, these data-frames were merged with once origin states and destination states to obtain the final data-frame for statistical analysis and visualization. Results of statistical analysis and visualization are presented in the results and discussion section.
+Next, we introduced the remaining data from their respective files. 
 
-
-### Data Preprocessing
+#### Data Preprocessing
 In the exploratory data analysis, we manipulated the data to find appropriate features for the model. There are 39 features in total. In this analysis, we removed self-loops in the food flow network, i.e. the origin and destination of the domestic flows being the same.
 Before moving towards building the neural network, we formatted the data type of different features to meet the model requirements (i.e. categorical or numerical).  To obtain categorical features, we create a function that takes the string value of the column and return the whole data-frame with a new one-hot encoded feature for the feature fed to the function. We also carefully removed some null values in many features to not lose any valuable data values. This was done by removing the features with missing percentage greater than 30%. To spot any collinearity and anomalies that might affect our results, we produced the correlation matrix and histogram of all variables (refer figures).
 Most of the crop production values are right tailed which means that we need to normalize the data before we feed it to our model. Also, we notice that the "value" feature is highly concentrated at one bin. The standard deviation for the dataset is very high and the quantile values are quite low, which suggests that we need to remove the major outliers from the dataset.
 
+
+
+
 ### Model
+
+
+#### Neural network
+
 In this analysis, we used neural network to predict the food flow between US states. We used two hidden layers with 30 and 12 neurons respectively with ReLu activation function. We used Adam optimizer function with a learning rate of 0.001, "mean squared error" loss function and RMSE as the metric. Batch size of 100 was considered with a validation split of 0.2 and number of epochs equals to 25. The results of the model run are discussed in the results and discussion section.
 
-### Random Forest
 
+
+#### Random Forest
 First of all, the FAF data needed to be expanded, because it does not include the case of no transaction, we will add the case of zero.
 To meet Kaggle's memory limitations, whether the products are imported, exported or produced domestically is ignored in RF model. 
 We group the bilateral flow data by origination state, destination state, commodity type, transportation mode and year.
@@ -217,7 +223,9 @@ Random Forests are good at dealing with outliers and different scale features bu
 In order to prevent close to 0 weights in base model due to different scales of features, we standardize the features to center the feature columns at mean 0 with standard deviation 1.
 After preparing the data for Random Forest model, we decide the hyperparameters for the RF model by applying the brute force grid search.
 
-### Baseline Model
+
+
+#### Baseline Model
 
 To validate our model, we also try the gravity model.
 The linear model like Ridge model is not suitable for the bilateral food flow estimation.
