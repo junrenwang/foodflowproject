@@ -10,6 +10,7 @@ GridSearching
 haversine
 histgram
 hyperparameters
+importors
 Junren
 junrenwang
 Kaggle’s
@@ -18,7 +19,7 @@ NN
 origst
 PPML
 Psedo
-repurposed
+regressiom
 sctg
 transcations
 underfit

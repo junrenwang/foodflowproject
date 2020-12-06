@@ -54,11 +54,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -90,9 +90,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/7c0535d9952964476e4ed3491dccb1a208688a45/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/7747ef378018e7a30e01af0842880fa782a2c4cb/))
 was automatically generated
-from [junrenwang/foodflowproject@7c0535d](https://github.com/junrenwang/foodflowproject/tree/7c0535d9952964476e4ed3491dccb1a208688a45)
+from [junrenwang/foodflowproject@7747ef3](https://github.com/junrenwang/foodflowproject/tree/7747ef378018e7a30e01af0842880fa782a2c4cb)
 on December 6, 2020.
 </em></small>
 
@@ -188,14 +188,19 @@ The validation $r^2$ is 0.86. RF model shows the better performance for the larg
 
 ![Random Forest Prediction Result.](images/RFestimationresults.png){#fig:image2}
 
-
+Figure @fig:image3 shows the importance of features on this bilateral food flow regression problem.
+The red bars are the importance of the forest with inter-trees variability.  
+As expected, commodity type, gdp of importors and gdp of exporters are informative. 
+Surprisingly, distance and year shows less impact on the regressiom results.   
 ![Random Forest Feature Importance.](images/features importance.png){#fig:image3}
 
 ### Baseline
 Using the same data as RF model mentioned above, the validation accuracy $r^2$ of Ridge model is 0.049 because there are so many zeros in the dataset. 
+We fitted gravity model to bilateral food flow data with PPML estimator, as shown in Figure @fig:image4.
+As we specified the commodity type and transportation mode, there is no group variance. 
 
 
-![Silent disco equipment repurposed.](images/gravity model result.png){#fig:image4}
+![Gravity model for specific commodity and transportation mode.](images/gravity model result.png){#fig:image4}
 
 
 ## Discussion
