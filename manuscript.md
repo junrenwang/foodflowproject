@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://junrenwang.github.io/foodflowproject/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/" />
+  <link rel="alternate" type="text/html" href="https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/" />
 
-  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/" />
+  <meta name="manubot_html_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: Food Flow Project
 
 <small><em>
 This manuscript
-([permalink](https://junrenwang.github.io/foodflowproject/v/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a/))
+([permalink](https://junrenwang.github.io/foodflowproject/v/cca7017a621c6b4518a54ac2311442cf94e7a919/))
 was automatically generated
-from [junrenwang/foodflowproject@7e8884a](https://github.com/junrenwang/foodflowproject/tree/7e8884a2f4255ca58f1dbb8d802a76ccfe33a85a)
+from [junrenwang/foodflowproject@cca7017](https://github.com/junrenwang/foodflowproject/tree/cca7017a621c6b4518a54ac2311442cf94e7a919)
 on December 6, 2020.
 </em></small>
 
